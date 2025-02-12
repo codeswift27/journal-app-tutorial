@@ -20,35 +20,6 @@ class Persistence {
         thoughtEntity.managedObjectClassName = "Thought"
         
         // Add attributes to the entity here
-        let titleAttribute = NSAttributeDescription()
-        titleAttribute.name = "title"
-        titleAttribute.type = .string
-        thoughtEntity.properties.append(titleAttribute)
-        
-        let contentAttribute = NSAttributeDescription()
-        contentAttribute.name = "content"
-        contentAttribute.type = .string
-        thoughtEntity.properties.append(contentAttribute)
-        
-        let dateCreatedAttribute = NSAttributeDescription()
-        dateCreatedAttribute.name = "dateCreated"
-        dateCreatedAttribute.type = .date
-        thoughtEntity.properties.append(dateCreatedAttribute)
-        
-        let dateModifiedAttribute = NSAttributeDescription()
-        dateModifiedAttribute.name = "dateModified"
-        dateModifiedAttribute.type = .date
-        thoughtEntity.properties.append(dateModifiedAttribute)
-        
-        let bookmarkedAttribute = NSAttributeDescription()
-        bookmarkedAttribute.name = "bookmarked"
-        bookmarkedAttribute.type = .boolean
-        thoughtEntity.properties.append(bookmarkedAttribute)
-        
-        let idAttribute = NSAttributeDescription()
-        idAttribute.name = "id"
-        idAttribute.type = .uuid
-        thoughtEntity.properties.append(idAttribute)
         
         let model = NSManagedObjectModel()
         model.entities = [thoughtEntity]
